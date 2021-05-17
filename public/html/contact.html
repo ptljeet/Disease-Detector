@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+
+</head>
+
+<style>
+    .background {
+        background-image: url(../img/image.jpg);
+        padding: 30px;
+    }
+
+    #textbox {
+        width: auto;
+        opacity: 0.8;
+        color: rgb(0, 0, 0);
+        font-size: x-large;
+        background-color: rgb(169, 216, 255);
+        padding: 20px 30px 30px 30px;
+        text-align: justify;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 3px solid black;
+    }
+
+    #header {
+        background-color: black;
+        height: 50px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+
+    li {
+        float: left;
+        border-right: 1px wheat;
+    }
+
+    li:last-child {
+        border-right: none;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: aqua;
+        color: black;
+    }
+
+    .active {
+        background-color: blue;
+    }
+</style>
+
+<body>
+
+    <div id="header">
+        <ul style="display:inline">
+            <li><a href="http://localhost:8000/">Home</a></li>
+            <li><a  href="../html/about.html">About</a></li>
+            <li><a class="active" href="../html/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="background">
+        <div id="textbox">
+            <h1> Contact Us</h1>
+            <table>
+                <tr>
+                    <td>Jeet Patel</td>
+                    <td>Jemik Patel</td>
+                    <td>Jay Patel</td>
+                    <td>Armisha Padaria</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

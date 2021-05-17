@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <style>
+            .background{
+                background-image: url(../img/image.jpg);
+                padding: 30px;
+            }
+
+            #textbox{
+                width: auto;
+                opacity: 0.8;
+                color: rgb(0, 0, 0);
+                font-size: x-large;
+                background-color: rgb(169, 216, 255);
+                padding: 20px 30px 30px 30px;
+                text-align: justify;
+            }
+
+            .h1{
+                color: rgb(1, 1, 121);
+                text-align: center;
+                text-decoration: underline;
+                
+            }
+
+            #footer{
+                width: 100%;
+                height: 40px;
+                font-size: xx-large;
+                font-weight: bolder;
+                color: white;
+                background-color: black;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+                padding: 10px 0px 0px 0px;
+                clear: left;
+            }
+
+            #header{
+            background-color: black;
+            height: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            }
+        
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        li{
+            float: left;
+            border-right: 1px wheat;
+        }
+
+        li:last-child{
+            border-right: none;
+        }
+
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active){
+            background-color: aqua;
+            color: black;
+        }
+
+        .active{
+            background-color: blue;
+        }
+
+        .span{
+            color: #0d00be;
+        }
+        .span2{
+            color: black;
+        }
+            
+        </style>
+
+    </head>
+
+    <body>
+        <div id="header">
+            <ul style="display:inline">
+                <li><a href="http://localhost:8000/">Home</a></li>
+                <li><a class="active" href="../html/about.html">About</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="background">
+            <div id="textbox">
+                <h1 class="h1">ABOUT DISEASE DETECTOR</h1>
+            
+                &nbsp; &nbsp; &nbsp; &nbsp; In today’s world there are various diseases in the market and also various doctors
+                available, but the people don’t know what primary actions to take and which
+                doctor to consult. Also now a day’s people are travelling a lot and unfortunately
+                if they fell ill while travelling, there are chances that they can’t find a relevant
+                doctor for the solution of this problem we can use our latest technology and can
+                help people. We know that in today’s life everything is based on online work so
+                we can design an application or website which can tell us what disease we have
+                got. Now a day when a person gets ill, he/she doesn’t know what primary actions
+                to be taken and which doctors to consult. Now people are making a lot of use of
+                mobile phones and computers. So in order to solve this problem we will design
+                an application and website in which when the user enter the symptoms, he gets
+                the information about the disease which he/she has got. Also he/she gets the
+                information about the primary states to be taken care of and also it recommends
+                the best doctors in the nearby area. Also the patients find the doctor’s location
+                through GPS.
+                <br><br><br><br><br>
+            </div>
+            
+            <div id="footer">Disease Detector</div>
+        </div>
+    </body>
+</html>

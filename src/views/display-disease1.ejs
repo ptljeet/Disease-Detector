@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Detector</title>
+    <link rel="stylesheet" href="css/display-disease-style.css" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
+
+</head>
+
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">Diseases</div>
+    </header>
+
+    <div>
+        <h1> &nbsp The probable diseases you might have : </h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="news">
+            <% if(diseases !=null) { %>
+                <% diseases.forEach(function(disease) { %>
+                    <a class="news__card">
+                    <h2>
+                        <%- disease.Issue.Name %>
+                    </h2>
+                    <h4>Accuracy: <%- disease.Issue.Accuracy %></h4>
+                    
+                    <!-- <a href="https://google.com/search?q= best doctor for <%- disease.Issue.Name %> near me"><button class="button button2">Find Doctor</button></a>  -->
+                    <button onclick="location.href='www.google.com/search?q= best doctor for <%- disease.Issue.Name %> near me'" class="button button2">Find Doctor</button>
+                    <form action="http://localhost:8000/get-info-of-disease" method="POST" target="_blank">
+                        <!-- <input type="submit" value= "<%- disease.Issue.ID %>"" /> -->
+                        <button class="button button2" type="submit" name="issueId" value="<%- disease.Issue.ID %>">Read more</button>
+                    </form>
+                        
+                    </a>
+                    <% }) %>
+                        <% } else{ %>
+                            No post found.
+                            <% } %>
+        </div>
+    </div>
+
+</body>
+
+</html>
